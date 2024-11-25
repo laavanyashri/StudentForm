@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Form</title>
+    <style>
+        .tblForm {
+            border-style: double;
+            border: 1px solid;
+            padding: 5px;
+            /* border-width:8px; */
+        }
+
+
+        tr th,
+        tr td {
+            border: 1px solid;
+            width: 100px;
+            padding: 3px;
+            text-align: center;
+
+        }
+
+        .rowheader {
+            font-weight: bold;
+        }
+
+        .saveButton {
+            width: 100%;
+            border: 2px solid black;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+    <form>
+        <h1>STUDENT FORM</h1>
+        <!--Student Form-->
+        <table id="tbleStudent" class="tblForm">
+            <tr>
+                <td class="rowheader">Name</td>
+                <td style="border:1px;"> <input type="text" id="txtName" placeholder="Enter your name"></input></td>
+            </tr>
+            <tr>
+                <td class="rowheader">Age</td>
+                <td><input type="text" id="txtAge" placeholder="Enter Age"></input></td>
+            </tr>
+            <tr>
+                <td class="rowheader">Gender</td>
+                <td>
+                    <input type="radio" id="rdMale"  value ="Male" name="gender" >Male</input>
+                    <input type="radio" id="rdFemale" value="Female" name="gender">Female</input>
+            </tr>
+            <tr>
+                <td class="rowheader">Course</td>
+                <td>
+                    <select style="width:100%;" name="coursedetails" id="course">
+                        <option value="javascript">Javascript</option>
+                        <option value="react">React</option>
+                        <option value="python">python</option>
+                        <option value="java">Java</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="rowheader">Email</td>
+                <td><input type="text" id="txtEmail" placeholder="Enter Email"></input></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="button" id="btnsave" class="saveButton">Save</button></td>
+            </tr>
+        </table>
+
+        <!--Student Details-->
+
+        <table id="tbleStudentDetails" class="tblForm">
+
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>COURSE</th>
+                <th>GENDER</th>
+                <th>EMAIL</th>
+                <th>ACTION</th>
+            </tr>
+        </table>
+
+        <!--script tag-->
+        <script src="StudentScript.js"></script>
+    </form>
+</center>
+</body>
+
+</html>
